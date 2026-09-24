@@ -11,8 +11,8 @@ st.write("This application calculates **Body Mass Index (BMI)** "
 #User Inputs
 st.subheader("Enter Your Details")
 hgt = st.number_input("Height (in Cm)",
-                min_value=0.5,
-                max_value=2.5)
+                min_value=50,
+                max_value=250)
 
 wgt = st.number_input("Weight (in kilograms)",
                 min_value=10.0,
