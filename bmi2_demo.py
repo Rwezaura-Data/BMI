@@ -26,7 +26,8 @@ def heightConvert(height):
 
 # Calculate BMI
 if st.button("Calculate BMI :)"):
-    bmi = wgt / (heightConvert(hgt) ** 2)
+    y = heightConvert(hgt)
+    bmi = wgt / (y ** 2)
 
     st.write(f"### Your BMI is: **{bmi:.2f}**")
 
