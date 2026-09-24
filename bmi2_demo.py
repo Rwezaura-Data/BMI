@@ -19,7 +19,7 @@ wgt = st.number_input("Weight (in kilograms)",
                 max_value=300.0)
 
 def heightConvert(height):
-    newHeight = height/100,
+    newHeight = height/100
     return newHeight
 
 #dsc = st.text_area("Short description")
