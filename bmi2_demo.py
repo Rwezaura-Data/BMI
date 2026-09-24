@@ -10,7 +10,7 @@ st.write("This application calculates **Body Mass Index (BMI)** "
 
 #User Inputs
 st.subheader("Enter Your Details")
-hgt = st.number_input("Height (in meters)",
+hgt = st.number_input("Height (in Cm)",
                 min_value=0.5,
                 max_value=2.5)
 
@@ -18,11 +18,15 @@ wgt = st.number_input("Weight (in kilograms)",
                 min_value=10.0,
                 max_value=300.0)
 
+def heightConvert(height):
+    newHeight = height/100,
+    return newHeight
+
 #dsc = st.text_area("Short description")
 
 # Calculate BMI
 if st.button("Calculate BMI :)"):
-    bmi = wgt / (hgt ** 2)
+    bmi = wgt / (heightConvert(hgt) ** 2)
 
     st.write(f"### Your BMI is: **{bmi:.2f}**")
 
