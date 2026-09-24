@@ -4,7 +4,7 @@
 import streamlit as st
 
 # App Title
-st.title("***BMI Calculator Application***")
+st.title("**BMI Calculator Application**")
 st.write("This application calculates **Body Mass Index (BMI)** "
           "and provides a health category based on standard **BMI ranges**.")
 
